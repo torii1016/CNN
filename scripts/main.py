@@ -69,7 +69,7 @@ def main():
     mnist_train_data = color_resize(mnist_train_data)
     mnist_test_data = color_resize(mnist.test.images)
 
-    cnn = ConvolutionalNeuralNetwork(32, 1000, 10)
+    cnn = ConvolutionalNeuralNetwork(32, 10)
     cnn.set_model(0.001)
 
     show_data = ShowData()

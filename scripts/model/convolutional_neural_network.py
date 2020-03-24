@@ -58,10 +58,9 @@ class _network(Layers):
 
 class ConvolutionalNeuralNetwork(object):
     
-    def __init__(self, fig_size, batch_size, output_dim):
+    def __init__(self, fig_size, output_dim):
         self.network = _network(["CNN"], [3,32,128,256], 512, output_dim)
         self.fig_size = fig_size
-        self.batch_size = batch_size 
         self.output_dim = output_dim
         
     def set_model(self, lr):
